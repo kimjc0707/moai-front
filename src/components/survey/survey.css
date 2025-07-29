@@ -1,0 +1,304 @@
+
+.survey-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom right, #EFF6FF, #E0E7FF);
+}
+
+.survey-card {
+    width: 100%;
+    max-width: 48rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transform: transition-all duration-300;
+}
+
+.survey-card:hover {
+    transform: scale(1.005);
+}
+
+.progress-container {
+    position: relative;
+    padding: 1.5rem;
+}
+
+.progress-header {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-badge {
+    font-size: 0.875rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    color: #1D4ED8;
+    background-color: #DBEAFE;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.progress-percentage {
+    font-size: 0.875rem;
+    font-weight: 700;
+    display: inline-block;
+    color: #1D4ED8;
+}
+
+.progress-bar-background {
+    overflow: hidden;
+    height: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    display: flex;
+    border-radius: 9999px;
+    background-color: #BFDBFE;
+}
+
+.progress-bar {
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    justify-content: center;
+    background-image: linear-gradient(to right, #3B82F6, #4F46E5);
+    transition: all 0.7s ease-out;
+    border-radius: 9999px;
+}
+
+.survey-content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.step-container {
+    animation: fade-in-up 0.5s ease-out;
+}
+
+.step-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.step-card {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #F3F4F6;
+}
+
+.step-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1.25rem;
+}
+
+.step-description {
+    color: #4B5563;
+    margin-bottom: 1.75rem;
+    font-size: 1.125rem;
+}
+
+.decision-question {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #374151;
+    margin-bottom: 2rem;
+}
+
+.decision-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transform: transition-all duration-300;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #2563EB;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1D4ED8;
+}
+
+.btn-secondary {
+    background-color: #D1D5DB;
+    color: #1F2937;
+}
+
+.btn-secondary:hover {
+    background-color: #9CA3AF;
+}
+
+.btn-success {
+    background-color: #16A34A;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #15803D;
+}
+
+.btn-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.item-list-editor {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.item-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    animation: fade-in-up 0.3s;
+}
+
+.item-input {
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+}
+
+.item-input:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #3B82F6;
+    border-color: transparent;
+}
+
+.item-input-amount {
+    width: 9rem;
+}
+
+.btn-add-item {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.btn-add-item:hover {
+    background-color: #BFDBFE;
+}
+
+.btn-remove-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    height: 2.5rem; /* item-input과 높이를 맞춤 */
+    font-size: 0.875rem; /* 폰트 크기 조정 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    background-color: #EF4444;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s;
+}
+
+.btn-remove-item:hover {
+    background-color: #DC2626;
+}
+
+.btn-remove-item:disabled {
+    background-color: #D1D5DB;
+    cursor: not-allowed;
+}
+
+.completion-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    animation: fade-in-up 0.5s;
+}
+
+.completion-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 1rem;
+}
+
+.completion-text {
+    color: #374151;
+}
+
+.category-select {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+.category-select:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #3B82F6;
+    border-color: transparent;
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
